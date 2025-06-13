@@ -12,15 +12,28 @@ body {
 .container {
     display: flex;
     height: 100vh;
+    gap: 20px;
+}
+
+.texts {
+  flex-grow: 1;    
+  margin-left: 20px;  
+  margin-top: 100px; 
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 320px;
+    height: 100vh; /* full height of the viewport */
     background-color: #f0f0f0;
     display: flex;
     flex-direction: column;  
     justify-content: center;
+    padding-right: 125px;
 }
+
 
 nav a {        
     text-align: left;
@@ -28,7 +41,7 @@ nav a {
     text-decoration: none;
     color: rgb(45, 45, 45);
     font-size: 1.3em;
-    font-weight: 600;
+    font-weight: 800;
     margin-bottom: 8px;
 }
 
@@ -40,9 +53,12 @@ nav a.highlight{
     margin-bottom: 8px;
 }
 
-h1, h2, h3, h4, h5 {
-  font-weight: 600;
-  color: rgb(19, 19, 19)
+h1, h2, h3, h4, h5, h6, ul {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: rgb(45, 45, 45);
+    margin-right: 120px; 
+    margin-left: 400px;
 }
 
 h1 {
@@ -62,7 +78,7 @@ h3 {
 
 h4 {
   font-size: 1.5em;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 
 h5 {
@@ -70,18 +86,11 @@ h5 {
   margin-top: 20px;
 }
 
-p {
-  font-size: 1em;
-  margin-bottom: 20px;
-  color: #374151;
-}
-
-ul, ol {
-  margin-left: 20px;
-  margin-bottom: 20px;
-  padding-left: 20px;
+h6 {
+  font-size: 1.0em;
+  margin-top: 15px;
 }
 
 li {
-  margin-bottom: 8px;
+    margin-top: 15px;
 }
