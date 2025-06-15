@@ -87,4 +87,9 @@ li {
     margin-top: 15px;
 }
 
-
+.linkButton {
+    text-decoration: none;
+    color: rgb(145, 34, 34);
+    margin-left: 400px;
+    font-weight: 700;
+}
