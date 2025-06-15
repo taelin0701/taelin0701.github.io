@@ -11,29 +11,21 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
-    gap: 20px;
 }
 
 .texts {
   flex-grow: 1;    
-  margin-left: 20px;  
-  margin-top: 100px; 
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 320px;
-    height: 100vh; /* full height of the viewport */
+    height: 100vh; 
     background-color: #f0f0f0;
+    position: fixed;
     display: flex;
     flex-direction: column;  
     justify-content: center;
-    padding-right: 125px;
 }
-
 
 nav a {        
     text-align: left;
@@ -41,7 +33,7 @@ nav a {
     text-decoration: none;
     color: rgb(45, 45, 45);
     font-size: 1.3em;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 8px;
 }
 
@@ -94,3 +86,5 @@ h6 {
 li {
     margin-top: 15px;
 }
+
+
