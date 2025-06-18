@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #fefefe;
   background-image: radial-gradient(circle, #ddd 1px, transparent 1px);
   background-size: 40px 40px;
   animation: floatDots 20s linear infinite;
@@ -40,6 +40,7 @@ html {
   margin-left: 400px; /* shifts it slightly left from center */
   border-radius: 10px; /* optional: soft corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional: nice depth */
+  opacity: 0.5;
 }
 
 .slideshow img {
@@ -69,9 +70,16 @@ html {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 2rem;
-  font-weight: bold;
   z-index: 2;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
+
+
+
+
+    opacity: 0.7
+
 }
 
 
@@ -97,7 +105,7 @@ nav a {
     text-align: left;
     margin-left: 110px; 
     text-decoration: none;
-    color: rgb(45, 45, 45);
+    color: rgb(82, 82, 82);
     font-size: 1.3em;
     font-weight: 600;
     margin-bottom: 8px;
@@ -121,8 +129,8 @@ nav a.highlight{
 h1, h2, h3, h4, h5, h6, ul {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    color: rgb(45, 45, 45);
-    margin-right: 120px; 
+    color: rgb(82, 82, 82);
+    margin-right: 200px; 
     margin-left: 400px;
 }
 
@@ -132,6 +140,7 @@ h1 {
 }
 
 h2 {
+    font-weight: 400;
   font-size: 2em;
   margin-top: 35px;
 }
@@ -148,7 +157,7 @@ h4 {
 
 h5 {
   font-size: 1.25em;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 h6 {
@@ -172,17 +181,23 @@ li {
 
 .linkButton {
   text-decoration: none;
-  color: rgb(145, 34, 34);
+  background-color: rgb(174, 37, 37);
+  color:#ffffff;
   margin-left: 400px;
   font-weight: 700;
   display: inline-block; /* ❗ required for transform to work */
   transition: transform 0.4s ease-out, color 0.4s ease;
   animation: nudge 3s infinite; /* ⏱ animation triggers every 3s */
+   padding: 12px 24px;
+     border: none;
+  border-radius: 8px;
+  margin-top:30px; 
 }
 
 .linkButton:hover {
   text-decoration: underline;
-  color: rgb(182, 182, 182);
+  background-color: rgb(182, 182, 182);
+  color:#f0f0f0;
   animation: none; /* Optional: stops animation on hover */
 }
 
@@ -190,17 +205,19 @@ li {
 .img {
     margin-top: 20px;
     margin-left: 400px;
+    height: auto;
 }
 
 .download {
-    margin-left: 400px;
+    margin-top: 50px; 
+    margin-left:140px;
+
   display: inline-block;
   padding: 12px 24px;
-  margin-top: 20px;
   font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
-  background-color: #3a7bd5;
+  background-color: rgb(145, 34, 34);
   border: none;
   border-radius: 8px;
   text-decoration: none;
@@ -211,14 +228,12 @@ li {
 }
 
 .download:hover {
-  background-color: #2b5ba8;
-  color: #ffd700; /* Gold text on hover */
+  background-color: rgb(182, 182, 182);
+  color:#f0f0f0;
   transform: translateY(-2px);
 }
 
 .fade-slide-in {
-  margin-top: 20px;
-    margin-left: 400px;
   opacity: 0;
   transform: translateX(20px); /* starts slightly to the right */
   animation: fadeInSlide 1.3s ease-out forwards;
