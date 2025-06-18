@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="main">
     <div class="container">
         <nav>
             <a class="highlight">Home</a>
@@ -18,7 +18,30 @@
             <a href="../subpages/resume.html">Resume</a>
             <a href="../subpages/contact.html">Contact</a>
         </nav>
-        <img src="images/computer-app.png" alt="main page image 1" style=" width: 80%; height: auto; margin-left: 100px">
+        
+        <div class="slideshow">
+        <img id="image1" src="images/computer-app.png" class="active">
+        <img id="image2" src="images/cs-image.jpeg">
+        <div class="slideshow-text">Explore Computer Science</div>
+    </div>
+    
+    <script>
+        const img1 = document.getElementById("image1");
+        const img2 = document.getElementById("image2");
+    
+        let showingImage1 = true;
+    
+        setInterval(() => {
+          if (showingImage1) {
+            img1.classList.remove("active");
+            img2.classList.add("active");
+          } else {
+            img2.classList.remove("active");
+            img1.classList.add("active");
+          }
+          showingImage1 = !showingImage1;
+        }, 3000);
+    </script>
     </div>
     <script>
         window.addEventListener('load', () => {

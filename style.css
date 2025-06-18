@@ -12,6 +12,10 @@ body {
 
 }
 
+.main {
+        background-color: #f0f0f0;
+}
+
 body.loaded {
   opacity: 1;
 }
@@ -19,7 +23,48 @@ body.loaded {
 html {
   scroll-behavior: smooth;
 }
+.slideshow {
+  position: relative;
+  width: 1200px;
+  height: 800px;
+  overflow: hidden;
+  margin: 50px auto 0 auto; /* vertically spaced and centered */
+  margin-left: 400px; /* shifts it slightly left from center */
+  border-radius: 10px; /* optional: soft corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional: nice depth */
+}
 
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;              /* Make all images fit the box */
+  object-fit: cover;         /* Crop the images to fill */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+  border-radius: 10px;       /* matches container if used */
+      filter: brightness(30%); 
+      filter: grayscale(100%);
+}
+
+.slideshow img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slideshow-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 2;
+  text-align: center;
+}
 
 
 .container {
