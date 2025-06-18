@@ -153,19 +153,31 @@ li {
 }
 
 
-.linkButton {
-    text-decoration: none;
-    color: rgb(145, 34, 34);
-    margin-left: 400px;
-    font-weight: 700;
-    transition: transform 0.4s ease-out, color 0.4s ease;
-    overflow: visible;
+@keyframes nudge {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
 }
 
-.linkButton:hover{
-    text-decoration: underline;
-    color: rgb(182, 182, 182);
+.linkButton {
+  text-decoration: none;
+  color: rgb(145, 34, 34);
+  margin-left: 400px;
+  font-weight: 700;
+  display: inline-block; /* ❗ required for transform to work */
+  transition: transform 0.4s ease-out, color 0.4s ease;
+  animation: nudge 3s infinite; /* ⏱ animation triggers every 3s */
 }
+
+.linkButton:hover {
+  text-decoration: underline;
+  color: rgb(182, 182, 182);
+  animation: none; /* Optional: stops animation on hover */
+}
+
 
 .img {
     margin-top: 20px;
