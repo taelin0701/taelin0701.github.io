@@ -150,11 +150,14 @@ li {
     margin-top: 15px;
 }
 
-.ul_large {
+.ul-large {
     font-weight: 400;
-    font-size: 1.3rem;"
+    font-size: 1.3rem;
 }
 
+.small-image {
+    width: 15px; height: auto; margin-left: 10px;
+}
 @keyframes nudge {
   0%, 100% {
     transform: translateX(0);
@@ -192,7 +195,7 @@ li {
     margin-left: 400px;
 }
 
-.profile_img {
+.profile-img {
     width: 230px;
     height: auto;
     position: relative;
@@ -228,11 +231,27 @@ li {
   transform: translateY(-2px);
 }
 
-.fade-slide-in {
+.slide-in-portfolio {
   opacity: 0;
   transform: translateX(20px); 
   animation: fadeInSlide 1.3s ease-out forwards;
   animation-delay: 0.2s; 
+  object-fit: cover; width: 400px; height: 100px; float: right; position: relative; top: -80px; right: 340px; border-radius: 8px;
+}
+
+.slide-in-bio {
+  opacity: 0;
+  transform: translateX(20px); 
+  animation: fadeInSlide 1.3s ease-out forwards;
+  animation-delay: 0.2s; 
+  width: 15%; height: auto; float: right; position: relative; top: 130px; right: 280px;
+}
+
+.resume {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes fadeInSlide {
