@@ -10,55 +10,45 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="../subpages/bio.html">Bio</a>
-            <a class="highlight">Portfolio</a>
-            <a href="../subpages/resume.html">Resume</a>
-            <a href="../subpages/contact.html">Contact</a>
-        </nav>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../subpages/bio.html">Bio</a>
+        <a class="highlight">Portfolio</a>
+        <a href="../subpages/resume.html">Resume</a>
+        <a href="../subpages/contact.html">Contact</a>
+    </nav>
 
-        <div class="texts">
-            <h2>Featured Projects</h2>
-            <h3 style="margin-top:80px">Class Projects</h3>
+    <div>
+        <h2 style="margin-top:80px">Class Projects</h2>
         
-            <table border="0" style="margin-left:400px;">
-                <tr>
-                    <th style="text-align:left;"><h5 style="margin: 0;">Personal Portfolio Web</h5></th>
-                    <th style="text-align:left;"><h5 style="margin: 0;">Career Plan/Job Search Web</h5></th>
-                </tr>
-                <tr>
-                    <th style="text-align:left;"><h6 style="margin: 0;">Built with HTML/CSS using VIM, VS Code, and GitHub.</h6></th>
-                    <th style="text-align:left;"><h6 style="margin: 0;">Collaborative group project managed on GitHub, utilizing APIs to enhance functionality.</h6></th>
-                </tr>
-            </table>
+        
+        <div style="float: left;">
+            <h5>Personal Portfolio Web</h5>
+            <h6>Built with HTML/CSS using VIM, VS Code, and GitHub</h6>
+            <a class="linkButton" href="https://github.com/taelin0701/taelin0701.github.io">GitHub Repo</a>
+        </div>
+        <div>
+            <h5>Career Plan/Job Search Web</h5>
+            <h6>Collaborative group project managed on GitHub and utilizing APIs</h6>
+            <a class="linkButton" style="margin-left: 0px;" href="https://github.com/CMPT-276-SUMMER-2025/final-project-20-waves">GitHub Repo</a>
+        </div>
 
-            <a class="linkButton" href="https://github.com/taelin0701/taelin0701.github.io">Personal Portfolio Web GitHub Repo link</a>
-            <a class="linkButton" href="https://github.com/CMPT-276-SUMMER-2025/final-project-20-waves">Career Plan/Job Search Web GitHub Repo link</a>
+       
+        <h2 style="margin-top:80px">Personal Projects</h2>
 
-            <h3 style="margin-top:80px">Personal Projects</h3>
-            <table border="0" style="margin-left:400px;">
-                <tr>
-                    <th style="text-align:left;"><h5 style="margin: 0;">Unity Game Design 3D</h5></th>
-                    <th style="text-align:left;"><h5 style="margin: 0;">Unity Game Design 2D RPG</h5></th>
-                </tr>
-                <tr>
-                    <th style="text-align:left;"><h6 style="margin: 0;">A 3D mobile game incorporating physics-based mechanics and advanced programming features.</h6></th>
-                    <th style="text-align:left;"><h6 style="margin: 0;">The game features a storyline-driven progression system, inventory management, and character leveling.</h6></th>
-                </tr>
-            </table>
-            <div style="display: flex; margin-left: 400px; margin-top:50px">
-                <div style="width: 600px; height: 200px; overflow: hidden; margin-right: 20px;">
-                    <img src="../images/Unity_3D.png" alt="portfolio image 1" style="width: 600px; height: auto;">
-                </div>
-                <div style="width: 600px; height: 200px; overflow: hidden;">
-                    <img src="../images/Unity_2D.png" alt="portfolio image 2" style="width: 600px; height: auto;">
-                </div>
-            </div>
+        <div style="margin-top:50px; width:1000px;">
+            <h4>Unity Game Design 3D</h4>
+            <h5>A 3D mobile game incorporating physics-based mechanics and advanced programming features.</h5>
+        </div>
+        <img class="fade-slide-in" src="../images/Unity_3D.png" alt="portfolio image 1" style="object-fit: cover; width: 400px; height: 100px; float: right; position: relative; top: -80px; right: 340px; border-radius: 8px;">
+
+        <div style="margin-top:100px; width:1000px;">
+            <h4>Unity Game Design 2D RPG</h4>
+            <h5>The game features a storyline-driven progression system, inventory management, and character leveling.</h5>
+        </div>
+        <img class="fade-slide-in" src="../images/Unity_2D.png" alt="portfolio image 2" style="object-fit: cover; width: 400px; height: 100px; float: right; position: relative; top: -80px; right: 340px; border-radius: 8px;">
 
    
-            
             <h2 style="margin-top:100px">Technical Skills</h2>
             <h4>Languages</h4>
             <ul>
@@ -75,7 +65,6 @@
             </ul>
             <br>
         </div>
-    </div>
     <script>
         window.addEventListener('load', () => {
         document.body.classList.add('loaded');

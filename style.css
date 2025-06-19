@@ -82,13 +82,8 @@ html {
 
 }
 
-
 .container {
     display: flex;
-}
-
-.texts {
-  flex-grow: 1;    
 }
 
 nav {
