@@ -121,7 +121,7 @@ nav a.highlight{
     margin-bottom: 8px;
 }
 
-h1, h2, h3, h4, h5, h6, ul {
+h2, h3, h4, h5, h6, ul {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: rgb(82, 82, 82);
@@ -129,20 +129,10 @@ h1, h2, h3, h4, h5, h6, ul {
     margin-left: 400px;
 }
 
-h1 {
-  font-size: 2.5em;
-  margin-top: 40px;
-}
-
 h2 {
     font-weight: 400;
-  font-size: 2em;
-  margin-top: 35px;
-}
-
-h3 {
-  font-size: 1.75em;
-  margin-top: 30px;
+    font-size: 2em;
+    margin-top: 40px;
 }
 
 h4 {
@@ -151,14 +141,10 @@ h4 {
 }
 
 h5 {
-  font-size: 1.25em;
+  font-size: 1.1em;
   margin-top: 10px;
 }
 
-h6 {
-  font-size: 1.0em;
-  margin-top: 15px;
-}
 
 li {
     margin-top: 15px;
