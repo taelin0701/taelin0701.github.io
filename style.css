@@ -79,7 +79,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(145, 34, 34);
+    color: rgb(174, 37, 37);
     transform: translateX(5px);
     font-size: 1.5em;
 }
@@ -139,85 +139,81 @@ li {
 
 .linkButton {
     text-decoration: none;
-    background-color: rgb(174, 37, 37);
-    color:#ffffff;
-    margin-left: 400px;
+    background-color: rgb(174, 37, 37); color:#ffffff;
+    margin-left: 400px; margin-top:30px; 
     font-weight: 700;
     display: inline-block;
-    transition: transform 0.4s ease-out, color 0.4s ease;
-    animation: nudge 3s infinite;
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
-    margin-top:30px; 
+    transition: transform 0.4s ease-out, color 0.4s ease;
+    animation: nudge 3s infinite;
+    
 }
 
 .linkButton:hover {
     text-decoration: underline;
     background-color: rgb(182, 182, 182);
     color:#f0f0f0;
-    animation: none; /* Optional: stops animation on hover */
+    animation: none;
 }
 
 .img {
-    margin-top: 20px;
-    margin-left: 400px;
+    margin-top: 20px; margin-left: 400px;
 }
 
 .profile-img {
-    width: 230px;
-    height: auto;
-    position: relative;
-    top: 50px; 
-    left: 400px;
-
+    width: 230px; height: auto;
+    position: relative; top: 50px; left: 400px;
     float: left;
     border-radius: 10px;
 }
 
 .download {
-    margin-top: 50px; 
-    margin-left:140px;
-
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  background-color: rgb(145, 34, 34);
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
-  cursor: pointer;
+    margin-top: 50px; margin-left:140px;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(145, 34, 34); color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 }
 
 .download:hover {
-  background-color: rgb(182, 182, 182);
-  color:#f0f0f0;
-  transform: translateY(-2px);
+    background-color: rgb(182, 182, 182);
+    color:#f0f0f0;
+    transform: translateY(-2px);
 }
 
 .slide-in-portfolio {
-  opacity: 0;
-  transform: translateX(20px); 
-  animation: fadeInSlide 1.3s ease-out forwards;
-  animation-delay: 0.2s; 
-  object-fit: cover; width: 400px; height: 100px; float: right; position: relative; top: -80px; right: 340px; border-radius: 8px;
+    opacity: 0;
+    transform: translateX(20px); 
+    animation: fadeInSlide 1.3s ease-out forwards;
+    animation-delay: 0.2s; 
+    object-fit: cover; 
+    width: 400px; height: 100px;
+    float: right; 
+    position: relative; top: -80px; right: 340px; 
+    border-radius: 8px;
 }
 
 .slide-in-bio {
-  opacity: 0;
-  transform: translateX(20px); 
-  animation: fadeInSlide 1.3s ease-out forwards;
-  animation-delay: 0.2s; 
-  width: 15%; height: auto; float: right; position: relative; top: 130px; right: 280px;
+    opacity: 0;
+    transform: translateX(20px); 
+    animation: fadeInSlide 1.3s ease-out forwards;
+    animation-delay: 0.2s; 
+    width: 15%; height: auto; 
+    float: right; 
+    position: relative; top: 130px; right: 280px;
 }
 
 .resume {
-    width: 500px;
-    height: auto;
+    width: 500px; height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
