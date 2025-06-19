@@ -150,6 +150,10 @@ li {
     margin-top: 15px;
 }
 
+.ul_large {
+    font-weight: 400;
+    font-size: 1.3rem;"
+}
 
 @keyframes nudge {
   0%, 100% {
@@ -186,7 +190,17 @@ li {
 .img {
     margin-top: 20px;
     margin-left: 400px;
+}
+
+.profile_img {
+    width: 230px;
     height: auto;
+    position: relative;
+    top: 50px; 
+    left: 400px;
+
+    float: left;
+    border-radius: 10px;
 }
 
 .download {
@@ -216,9 +230,9 @@ li {
 
 .fade-slide-in {
   opacity: 0;
-  transform: translateX(20px); /* starts slightly to the right */
+  transform: translateX(20px); 
   animation: fadeInSlide 1.3s ease-out forwards;
-  animation-delay: 0.2s; /* optional: delay for a smoother feel */
+  animation-delay: 0.2s; 
 }
 
 @keyframes fadeInSlide {
