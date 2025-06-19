@@ -1,94 +1,65 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-  background-color: #fefefe;
-  background-image: radial-gradient(circle, #ddd 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: floatDots 20s linear infinite;
-  font-family: 'Quicksand', sans-serif;
-  opacity: 0;
-  transition: opacity 0.6s ease-in-out;
-}
-
-@keyframes floatDots {
-  from { background-position: 0 0; }
-  to   { background-position: 100px 100px; }
-}
-
-
-.main {
-        background-color: #f0f0f0;
-}
-
-body.loaded {
-  opacity: 1;
+    margin: 0; padding: 0; box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
+body {
+    background-color: #fefefe;
+    background-image: radial-gradient(circle, #ddd 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: floatDots 20s linear infinite;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+@keyframes floatDots {
+    from { background-position: 0 0; }
+    to   { background-position: 100px 100px; }
+}
+
+.main {
+    background-color: #f0f0f0;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
 .slideshow {
-  position: relative;
-  width: 1200px;
-  height: 800px;
-  overflow: hidden;
-  margin: 50px auto 0 auto; /* vertically spaced and centered */
-  margin-left: 400px; /* shifts it slightly left from center */
-  border-radius: 10px; /* optional: soft corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional: nice depth */
-  opacity: 0.5;
+    position: relative;
+    width: 1200px; height: 800px;
+    overflow: hidden;
+    margin: 50px auto 0 auto; 
+    margin-left: 400px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.5;
 }
 
 .slideshow img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;              /* Make all images fit the box */
-  object-fit: cover;         /* Crop the images to fill */
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  z-index: 0;
-  border-radius: 10px;       /* matches container if used */
-      filter: brightness(30%); 
-      filter: grayscale(100%);
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;         
+    object-fit: cover;         
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+    border-radius: 10px;    
+    filter: brightness(30%); 
+    filter: grayscale(100%);
 }
 
 .slideshow img.active {
-  opacity: 1;
-  z-index: 1;
-}
-
-.slideshow-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2rem;
-  z-index: 2;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-
-
-
-
-
-    opacity: 0.7
-
-}
-
-.container {
-    display: flex;
+    opacity: 1;
+    z-index: 1;
 }
 
 nav {
-    width: 320px;
-    height: 100vh; 
+    width: 320px; height: 100vh; 
     background-color: #f0f0f0;
     position: fixed;
     display: flex;
@@ -121,12 +92,11 @@ nav a.highlight{
     margin-bottom: 8px;
 }
 
-h2, h3, h4, h5, h6, ul {
+h2, h4, h5, h6, ul {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: rgb(82, 82, 82);
-    margin-right: 200px; 
-    margin-left: 400px;
+    margin-right: 200px; margin-left: 400px;
 }
 
 h2 {
@@ -136,15 +106,14 @@ h2 {
 }
 
 h4 {
-  font-size: 1.5em;
-  margin-top: 50px;
+    font-size: 1.5em;
+    margin-top: 50px;
 }
 
 h5 {
-  font-size: 1.1em;
-  margin-top: 10px;
+    font-size: 1.1em;
+    margin-top: 10px;
 }
-
 
 li {
     margin-top: 15px;
@@ -158,6 +127,7 @@ li {
 .small-image {
     width: 15px; height: auto; margin-left: 10px;
 }
+
 @keyframes nudge {
   0%, 100% {
     transform: translateX(0);
@@ -168,27 +138,26 @@ li {
 }
 
 .linkButton {
-  text-decoration: none;
-  background-color: rgb(174, 37, 37);
-  color:#ffffff;
-  margin-left: 400px;
-  font-weight: 700;
-  display: inline-block; /* ❗ required for transform to work */
-  transition: transform 0.4s ease-out, color 0.4s ease;
-  animation: nudge 3s infinite; /* ⏱ animation triggers every 3s */
-   padding: 12px 24px;
-     border: none;
-  border-radius: 8px;
-  margin-top:30px; 
+    text-decoration: none;
+    background-color: rgb(174, 37, 37);
+    color:#ffffff;
+    margin-left: 400px;
+    font-weight: 700;
+    display: inline-block;
+    transition: transform 0.4s ease-out, color 0.4s ease;
+    animation: nudge 3s infinite;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    margin-top:30px; 
 }
 
 .linkButton:hover {
-  text-decoration: underline;
-  background-color: rgb(182, 182, 182);
-  color:#f0f0f0;
-  animation: none; /* Optional: stops animation on hover */
+    text-decoration: underline;
+    background-color: rgb(182, 182, 182);
+    color:#f0f0f0;
+    animation: none; /* Optional: stops animation on hover */
 }
-
 
 .img {
     margin-top: 20px;
@@ -220,7 +189,6 @@ li {
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
   cursor: pointer;
 }
